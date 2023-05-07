@@ -92,7 +92,7 @@
 
 #Main{
     position: relative;
-    
+    display: flex;
     overflow: hidden;
     height: max-content;
 
@@ -118,6 +118,84 @@
 
 
 }
+    #aside{
+        height: 0;
+        width: 0;
+        background-color: maroon;
+        
+    }
+
+        #a-div1{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            background-color: white;
+            border-top-left-radius: 20px;
+
+        }
+            #a-img{
+                height: 100%;
+                width: 30%;
+                border: 1px solid green;
+            }
+            #a-info{
+                height: 100%;
+                width: 70%;
+               
+                
+            }
+                .div-info{
+                    height: 50%;
+                    width: auto;
+                    border: 1px solid purple;
+                }
+        #btns{
+            height: 90%;
+            width: 100%;
+            display: block;
+        }
+                .btn-menu{
+                    margin-top: 5vh;
+                    width: 100%;
+                    height: 11%;
+                    border: 1px solid gray;
+                    cursor: pointer;
+                }
+
+                @keyframes miAnimacion {
+                    from{
+                        
+                        width: 0%;
+                        height: 0%;
+                      }
+                      to{
+                        
+                        width: 20vw;
+                        height: 100vh;
+                    
+                      }
+                    }
+                  .animacion {
+                    animation: miAnimacion 1s forwards;
+                  }
+                  @keyframes miAnimacion2 {
+                    from{
+                        
+                        width: 20vw;
+                        height: 100vh;
+                      }
+                      to{
+                        
+                        width: 0%;
+                        height: 0%;
+                    
+                      }
+                    }
+                  .animacionOff {
+                    animation: miAnimacion2 1s forwards;
+                  }
+
+
     #Section1{
         width: 80%;
         height: 90%;
